@@ -1,4 +1,5 @@
-ChefAI 🧑‍🍳
+ChefAI 🧑‍🍳<img width="1470" height="956" alt="Screenshot 2025-10-07 at 3 16 41 AM" src="https://github.com/user-attachments/assets/b44c1405-b7a5-4f8a-a16d-60b01aad2b70" />
+
 A smart, AI-powered recipe generator that creates unique recipes from the ingredients you have on hand. Built with Python, Flask, and the Google Gemini API.
 
 (Note: Take a screenshot of your running app and replace the placeholder path above. An animated GIF of the app working is even better!)

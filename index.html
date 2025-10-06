@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChefAI</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; background-color: #f0f2f5; margin: 0; padding: 2rem; }
+        .container { max-width: 700px; margin: auto; background: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px R12px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: #333; }
+        textarea { width: 95%; height: 80px; padding: 10px; border-radius: 8px; border: 1px solid #ddd; font-size: 16px; }
+        input[type="submit"] { display: block; width: 100%; padding: 15px; background-color: #28a745; color: white; border: none; border-radius: 8px; font-size: 18px; cursor: pointer; margin-top: 1rem; }
+        .recipe { margin-top: 2.5rem; border-top: 1px solid #eee; padding-top: 1.5rem; white-space: pre-wrap; line-height: 1.6; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ChefAI 🧑‍🍳</h1>
+        <p>Enter the ingredients you have, and I'll create a recipe for you!</p>
+        <form method="POST">
+            <textarea name="ingredients" placeholder="e.g., chicken breast, rice, broccoli, soy sauce" required></textarea>
+            <input type="submit" value="Generate Recipe">
+        </form>
+        
+        {% if recipe %}
+            <div class="recipe">
+                {{ recipe }}
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
